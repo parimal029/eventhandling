@@ -1,0 +1,39 @@
+<html>
+    <body>
+        <script>
+            function displayDate(){
+                document.getElementById("Show").innerHTML = Date();
+            }
+
+            function pictureChange()
+                {
+                    document.getElementById('theImage').src="http://31.media.tumblr.com/fca646cd8fe87906e605ad7e8d039903/tumblr_mmoz4fWT6U1soh1p8o1_500.png";
+                }
+
+                function bigImg(x) {
+                    x.style.height = "100px";
+                    x.style.width = "100px";
+                }
+
+                function normalImg(x) {
+                    x.style.height = "50px";
+                    x.style.width = "50px";
+                }
+        </script>
+
+        <p>Click On the button below to Display the date. </p>    
+        <button onclick="displayDate()">The Time right now is</button>
+        
+        <p id="Show"></p>
+
+        <img id="theImage" src="http://31.media.tumblr.com/18b5f8f0a00ad01e50f7ae2f513be52d/tumblr_msqcl4iwM01soh1p8o1_500.png">
+        <p><input type="button" id="theButton" value="click me!" onclick="pictureChange()"></p>
+
+
+        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="smiley.png" alt="Smiley" width="50" height="50">
+
+        <p>Hover the mouse over the emoji to enlarge it.</p>
+
+    </body>
+</html>
+
